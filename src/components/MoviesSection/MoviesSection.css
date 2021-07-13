@@ -1,0 +1,45 @@
+.App__MoviesSectionWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0;
+}
+
+.App__MoviesSectionWrapper h2 {
+  margin-left: 1em;
+  color: #fff;
+}
+
+.App__MoviesSectionWrapper .App__MovieSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar {
+  height: 8px;
+  width: 10px;
+  background-color: #454569;
+  border-radius: 100px;
+}
+
+.App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.287);
+  border-radius: 100px;
+  width: 10px;
+}
+
+.App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar-track-piece {
+  width: 10px;
+}
+/*# sourceMappingURL=MoviesSection.css.map */

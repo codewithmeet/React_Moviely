@@ -1,0 +1,48 @@
+.App__HeaderWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  min-width: 100%;
+  min-height: auto;
+  margin: 0 0 10vh 0;
+  background-color: #454569;
+  color: white;
+}
+
+.App__HeaderWrapper .App__HeaderContainer {
+  min-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 764px) {
+  .App__HeaderWrapper .App__HeaderContainer {
+    padding: 0 0.8em;
+    width: 100%;
+  }
+}
+
+.App__HeaderWrapper .App__HeaderContainer h2 {
+  font-size: 1.2em;
+}
+
+.App__HeaderWrapper .App__HeaderContainer h2 span {
+  color: #7ba7c3;
+}
+/*# sourceMappingURL=Header.css.map */

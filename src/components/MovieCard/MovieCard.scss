@@ -1,0 +1,36 @@
+.App__MovieCardWrapper {
+  min-width: 200px;
+  width: 200px;
+  min-height: 300px;
+  margin: 1em;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  img {
+    object-fit: contain;
+    border-radius: 20px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.808);
+    }
+  }
+
+  .App__MovieCardDetails {
+    padding: 0 0.8em;
+    h4 {
+      margin: 0.3em 0;
+      word-wrap: normal;
+      max-width: 200px;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      opacity: 0.5;
+      margin: 0;
+    }
+  }
+}

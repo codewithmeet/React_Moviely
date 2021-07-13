@@ -1,0 +1,30 @@
+.App__MoviesSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  h2 {
+    margin-left: 1em;
+    color: #fff;
+  }
+  .App__MovieSection {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 10px;
+      background-color: #454569;
+      border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.287);
+      border-radius: 100px;
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track-piece {
+      width: 10px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+form .App__InputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  background-color: #454569;
+  border: 1px solid transparent;
+  width: 15em;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+form .App__InputContainer input {
+  outline: 0;
+  height: 1em;
+  width: 0;
+  margin: 0 1em;
+  border-radius: 4px;
+  border: none;
+  background-color: #454569;
+  color: white;
+  font-size: 1em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+form .App__InputContainer input::-webkit-input-placeholder {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+form .App__InputContainer input:-ms-input-placeholder {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+form .App__InputContainer input::-ms-input-placeholder {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+form .App__InputContainer input::placeholder {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+form .App__InputContainer input:focus {
+  outline: none;
+}
+
+form .App__InputContainer input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+form .App__InputContainer input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+form .App__InputContainer input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+form .App__InputContainer input:focus::placeholder {
+  opacity: 0;
+}
+
+form .App__InputContainer input#inActive {
+  width: 0;
+}
+
+form .App__InputContainer input#active {
+  width: 100%;
+}
+
+form .App__InputContainer span {
+  color: white;
+  padding: 0.5em;
+  font-size: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  text-align: center;
+  cursor: pointer;
+}
+
+form .App__InputContainer span svg {
+  margin: -2px 0;
+}
+
+form .App__InputContainer span:focus-within {
+  width: 80%;
+}
+
+form .App__InputContainer:focus-within {
+  border: 2px solid #6666a0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.384);
+}
+/*# sourceMappingURL=SearchBar.css.map */

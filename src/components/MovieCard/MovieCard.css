@@ -1,0 +1,44 @@
+.App__MovieCardWrapper {
+  min-width: 200px;
+  width: 200px;
+  min-height: 300px;
+  margin: 1em;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.App__MovieCardWrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.App__MovieCardWrapper img:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.808);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.808);
+}
+
+.App__MovieCardWrapper .App__MovieCardDetails {
+  padding: 0 0.8em;
+}
+
+.App__MovieCardWrapper .App__MovieCardDetails h4 {
+  margin: 0.3em 0;
+  word-wrap: normal;
+  max-width: 200px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.App__MovieCardWrapper .App__MovieCardDetails p {
+  opacity: 0.5;
+  margin: 0;
+}
+/*# sourceMappingURL=MovieCard.css.map */
