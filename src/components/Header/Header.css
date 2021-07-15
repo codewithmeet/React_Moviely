@@ -38,7 +38,13 @@
   }
 }
 
+.App__HeaderWrapper .App__HeaderContainer a {
+  text-decoration: none;
+  color: white;
+}
+
 .App__HeaderWrapper .App__HeaderContainer h2 {
+  cursor: pointer;
   font-size: 1.2em;
 }
 

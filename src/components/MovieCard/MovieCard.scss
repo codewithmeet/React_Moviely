@@ -19,14 +19,9 @@
   }
 
   .App__MovieCardDetails {
-    padding: 0 0.8em;
+    padding: 0 0.4em;
     h4 {
       margin: 0.3em 0;
-      word-wrap: normal;
-      max-width: 200px;
-      position: relative;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     p {
       opacity: 0.5;

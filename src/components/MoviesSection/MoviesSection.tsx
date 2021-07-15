@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ReactPropTypes, useEffect } from "react";
-import { Moviely, requests } from "../../services/constants";
+import { useEffect } from "react";
+import { Moviely } from "../../services/constants";
 import MovieCard from "../MovieCard/MovieCard";
 import "./MoviesSection.css";
 
@@ -13,13 +13,13 @@ const MoviesSection = (props: { sectionHeading: string; url: string }) => {
       setMovies(response.data.results);
       console.log(response);
     })();
-  }, []);
+  }, [props.url]);
 
   return (
     <div className="App__MoviesSectionWrapper">
       <h2>{props.sectionHeading}</h2>
       <div className="App__MovieSection">
-        {Movies.map((e: any) => (
+        {Movies?.map((e: any) => (
           <MovieCard
             moviePoster={e.poster_path}
             movieName={e.original_title}

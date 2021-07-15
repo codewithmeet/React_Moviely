@@ -1,5 +1,6 @@
 import { posterBaseURL } from "../../services/constants";
 import "./MovieCard.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MovieCard = (props: {
   movieName: string;
@@ -8,7 +9,13 @@ const MovieCard = (props: {
 }) => {
   return (
     <div className="App__MovieCardWrapper">
-      <img src={posterBaseURL + props.moviePoster} alt="test" />
+      <LazyLoadImage
+        alt={`${props.movieName} poster`}
+        src={posterBaseURL + props.moviePoster}
+        effect="black-and-white"
+        delayTime={5000}
+      />
+
       <div className="App__MovieCardDetails">
         <h4>{props.movieName}</h4>
         <p>{props.movieDate}</p>

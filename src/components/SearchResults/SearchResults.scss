@@ -1,0 +1,16 @@
+@import "../../mixins/responsiveMixins";
+.App__SearchResultsWrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .App__SearchResultsContainer {
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-flow: row;
+    @include for-phone-only {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}

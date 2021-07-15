@@ -32,3 +32,11 @@ export const requests = {
   // Action
   fetchAction: `/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_genres=28`,
 };
+
+export const MultiSearch = async (search: string) => {
+  const response = Moviely.get(
+    `/search/multi?api_key=${apiKey}&language=en-US&query=${search}&page=1&include_adult=false`
+  );
+
+  return (await response).data;
+};

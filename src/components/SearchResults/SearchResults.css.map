@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,0BAA0B,CAAC;EACzB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAUxB;;AAdD,AAKE,0BALwB,CAKxB,4BAA4B,CAAC;EAC3B,OAAO,EAAE,IAAI;EAEb,qBAAqB,EAAE,yBAAyB;EAChD,cAAc,EAAE,GAAG;CAIpB;;ACbD,MAAM,EAAE,SAAS,EAAE,KAAK;EDA1B,AAKE,0BALwB,CAKxB,4BAA4B,CAAC;IAMzB,qBAAqB,EAAE,yBAAyB;GAEnD",
+    "sources": [
+        "SearchResults.scss",
+        "../../mixins/_responsiveMixins.scss"
+    ],
+    "names": [],
+    "file": "SearchResults.css"
+}
