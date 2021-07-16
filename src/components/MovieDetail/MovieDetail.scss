@@ -1,0 +1,14 @@
+.App__MovieDetailWrapper {
+  min-height: 100vh;
+  margin: 7vh 0 0 0;
+
+  .App__MovieDetailContainer {
+    background-image: linear-gradient(
+      to right,
+      rgba(2.75%, 5.49%, 11.37%, 1) 150px,
+      rgba(2.75%, 5.49%, 11.37%, 0.84) 100%
+    );
+    .App__MovieDetailBackDropContainer {
+    }
+  }
+}

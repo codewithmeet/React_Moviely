@@ -1,0 +1,20 @@
+.player-wrapper {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  /* Player ratio: 100 / (1280 / 720) */
+}
+
+@media (max-width: 764px) {
+  .player-wrapper {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=Player.css.map */

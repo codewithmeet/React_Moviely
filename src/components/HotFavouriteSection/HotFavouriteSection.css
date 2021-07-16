@@ -6,16 +6,23 @@
 }
 
 .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer {
+  min-width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection {
   position: relative;
   min-height: inherit;
-  background-image: linear-gradient(to right, #070e1d 150px, rgba(7, 14, 29, 0.84) 100%);
+  background-image: linear-gradient(to right, #070e1d 150px, rgba(7, 14, 29, 0.78) 100%);
   padding: 1.5em;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper {
   min-width: 100%;
   width: 200px;
-  min-height: 300px;
+  min-height: 280px;
   margin: 1em;
   color: white;
   display: -webkit-box;
@@ -27,7 +34,7 @@
 }
 
 @media (max-width: 764px) {
-  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper {
+  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -38,11 +45,11 @@
   }
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper img {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  width: inherit;
+  width: 300px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -50,13 +57,13 @@
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.459);
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails {
   width: 100%;
   margin: 0 3em;
 }
 
 @media (max-width: 764px) {
-  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails {
+  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -65,36 +72,36 @@
   }
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h1 span {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h1 span {
   opacity: 0.5;
   font-style: italic;
   font-size: 0.4em;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails p {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails p {
   margin: 0 0 0.5em 0;
   opacity: 0.5;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4 {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4 {
   margin: 0;
   width: 80%;
   line-height: 1.5em;
 }
 
 @media (max-width: 764px) {
-  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4 {
+  .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4 {
     width: 100%;
   }
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4#overviewdetails {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h4#overviewdetails {
   opacity: 0.8;
   margin: 1em 0;
   font-style: italic;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,26 +110,26 @@
           align-items: center;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper {
   max-width: 6em;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper .App__HotFavouriteRatingContainer {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper .App__HotFavouriteRatingContainer {
   margin-top: 1.5em;
   height: 5em;
   width: 5em;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper h4 {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouriteRatingWrapper h4 {
   margin-top: 1em;
   width: 100%;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton {
   margin-left: 2em;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button#HotFavouritePlayBtn {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button.HotFavouritePlayBtn {
   border: 0;
   outline: 0;
   background-color: #454569;
@@ -145,12 +152,37 @@
   border-radius: 3px;
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button#HotFavouritePlayBtn:hover {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button.HotFavouritePlayBtn:hover {
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.514);
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.514);
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button#HotFavouritePlayBtn h4 {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails .App__HotFavouriteBottomBar .App__HotFavouritePlayButton button.HotFavouritePlayBtn h4 {
   width: 100%;
+}
+
+.App__HotFavouriteSectionWrapper .App__MovieTrailerContianer {
+  width: 100%;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App__HotFavouriteSectionWrapper .App__MovieTrailerContianer h2 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=HotFavouriteSection.css.map */

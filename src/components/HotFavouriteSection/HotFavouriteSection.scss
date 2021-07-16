@@ -4,111 +4,130 @@
   height: auto;
   z-index: 1;
   position: relative;
-  .App__HotFavouriteSectionContainer {
-    position: relative;
-    min-height: inherit;
-    background-image: linear-gradient(
-      to right,
-      rgba(2.75%, 5.49%, 11.37%, 1) 150px,
-      rgba(2.75%, 5.49%, 11.37%, 0.84) 100%
-    );
-    padding: 1.5em;
 
-    // card
-    .App__HotFavouriteCardWrapper {
-      min-width: 100%;
-      width: 200px;
-      min-height: 300px;
-      margin: 1em;
-      color: white;
-      display: flex;
-      @include for-phone-only {
-        flex-direction: column;
-        align-items: center;
-      }
-      transition: all 0.3s ease-in-out;
+  .App__HotFavouriteSectionContainer {
+    min-width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    .App__HotFavouriteSection {
       position: relative;
-      img {
-        object-fit: cover;
-        border-radius: 5px;
-        width: inherit;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.459);
-      }
-      .App__HotFavouriteCardDetails {
-        width: 100%;
-        margin: 0 3em;
+      min-height: inherit;
+      background-image: linear-gradient(
+        to right,
+        rgba(2.75%, 5.49%, 11.37%, 1) 150px,
+        rgba(2.75%, 5.49%, 11.37%, 0.78) 100%
+      );
+      padding: 1.5em;
+
+      // card
+      .App__HotFavouriteCardWrapper {
+        min-width: 100%;
+        width: 200px;
+        min-height: 280px;
+        margin: 1em;
+        color: white;
+        display: flex;
         @include for-phone-only {
           flex-direction: column;
-          margin: 0;
-        }
-        h1 {
-          span {
-            opacity: 0.5;
-            font-style: italic;
-            font-size: 0.4em;
-          }
-        }
-        p {
-          margin: 0 0 0.5em 0;
-          opacity: 0.5;
-        }
-        h4 {
-          margin: 0;
-          width: 80%;
-          line-height: 1.5em;
-          @include for-phone-only {
-            width: 100%;
-          }
-        }
-        h4#overviewdetails {
-          opacity: 0.8;
-          margin: 1em 0;
-          font-style: italic;
-        }
-        .App__HotFavouriteBottomBar {
-          display: flex;
           align-items: center;
-          .App__HotFavouriteRatingWrapper {
-            max-width: 6em;
-
-            .App__HotFavouriteRatingContainer {
-              margin-top: 1.5em;
-              height: 5em;
-              width: 5em;
+        }
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        img {
+          object-fit: cover;
+          border-radius: 5px;
+          width: 300px;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.459);
+        }
+        .App__HotFavouriteCardDetails {
+          width: 100%;
+          margin: 0 3em;
+          @include for-phone-only {
+            flex-direction: column;
+            margin: 0;
+          }
+          h1 {
+            span {
+              opacity: 0.5;
+              font-style: italic;
+              font-size: 0.4em;
             }
-            h4 {
-              margin-top: 1em;
+          }
+          p {
+            margin: 0 0 0.5em 0;
+            opacity: 0.5;
+          }
+          h4 {
+            margin: 0;
+            width: 80%;
+            line-height: 1.5em;
+            @include for-phone-only {
               width: 100%;
             }
           }
-          .App__HotFavouritePlayButton {
-            margin-left: 2em;
-            button#HotFavouritePlayBtn {
-              border: 0;
-              outline: 0;
-              background-color: #454569;
-              color: white;
-              display: flex;
-              width: 8em;
-              height: 3em;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0.6em;
-              cursor: pointer;
-              transition: all 0.3s ease-in-out;
-              border-radius: 3px;
-              &:hover {
-                box-shadow: 0 0 10px rgba(255, 255, 255, 0.514);
+          h4#overviewdetails {
+            opacity: 0.8;
+            margin: 1em 0;
+            font-style: italic;
+          }
+          .App__HotFavouriteBottomBar {
+            display: flex;
+            align-items: center;
+            .App__HotFavouriteRatingWrapper {
+              max-width: 6em;
+
+              .App__HotFavouriteRatingContainer {
+                margin-top: 1.5em;
+                height: 5em;
+                width: 5em;
               }
               h4 {
+                margin-top: 1em;
                 width: 100%;
+              }
+            }
+            .App__HotFavouritePlayButton {
+              margin-left: 2em;
+              button.HotFavouritePlayBtn {
+                border: 0;
+                outline: 0;
+                background-color: #454569;
+                color: white;
+                display: flex;
+                width: 8em;
+                height: 3em;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.6em;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                border-radius: 3px;
+                &:hover {
+                  box-shadow: 0 0 10px rgba(255, 255, 255, 0.514);
+                }
+                h4 {
+                  width: 100%;
+                }
               }
             }
           }
         }
       }
+    }
+  }
+  .App__MovieTrailerContianer {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      align-items: flex-start;
     }
   }
 }

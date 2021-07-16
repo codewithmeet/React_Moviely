@@ -6,10 +6,15 @@ const apiKey = "e1666ee2389596938c1171ebf31e74b8";
 export const posterBaseURL =
   "https://www.themoviedb.org/t/p/w440_and_h660_face";
 
+// Banner BaseUrl
+export const bannerBaseURL =
+  "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/";
+
 // Trailer Video
 
 // Trailer ThumbNail Url
-//i.ytimg.com/vi/RxAtuMu_ph4/original.jpg
+export const trailerThumbnail = (trailerId: string | undefined) =>
+  `i.ytimg.com/vi/${trailerId}/original.jpg`;
 
 export const Moviely = axios.create({
   baseURL: "https://api.themoviedb.org/3",
@@ -39,4 +44,18 @@ export const MultiSearch = async (search: string) => {
   );
 
   return (await response).data;
+};
+
+export const GetMovieDetails = async (movieId: string | undefined) => {
+  const response = Moviely.get(
+    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&append_to_response=videos,images,credits,recommendations`
+  );
+
+  return (await response).data;
+};
+
+export const GetMovieTrailerUrl = (trailerKey: string, trailerSite: string) => {
+  if (trailerSite === "YouTube") {
+    return `https://youtu.be/${trailerKey}`;
+  }
 };

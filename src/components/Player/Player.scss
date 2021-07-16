@@ -1,0 +1,18 @@
+@import "../../mixins/responsiveMixins";
+.player-wrapper {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  @include for-phone-only {
+    width: 100%;
+    height: 40vh;
+  }
+
+  /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

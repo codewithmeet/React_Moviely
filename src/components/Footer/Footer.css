@@ -1,0 +1,43 @@
+.App__FooterWrapper {
+  width: 100%;
+  min-height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #454569;
+  color: #fff;
+}
+
+.App__FooterWrapper .App__FooterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.App__FooterWrapper .App__FooterContainer p {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 764px) {
+  .App__FooterWrapper .App__FooterContainer {
+    font-size: 0.8em;
+  }
+}
+
+.App__FooterWrapper .App__FooterContainer span.App__Credits {
+  margin-top: 0.2em;
+  font-size: 0.5em;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACvB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,SAAS;CAWlB;;AAbD,AAIE,wBAJsB,CAItB,0BAA0B,CAAC;EACzB,gBAAgB,EAAE,oEAIjB;CAGF",
     "sources": [
         "MovieDetail.scss"
     ],

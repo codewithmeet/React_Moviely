@@ -1,0 +1,12 @@
+.App__LoadingScreenWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+}

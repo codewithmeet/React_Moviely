@@ -1,0 +1,10 @@
+.App__NotFoundWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  .App__NotFoundContainer {
+    font-size: 1.2em;
+  }
+}

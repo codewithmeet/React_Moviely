@@ -1,0 +1,27 @@
+@import "../../mixins/responsiveMixins";
+.App__FooterWrapper {
+  width: 100%;
+  min-height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #454569;
+  color: #fff;
+  .App__FooterContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    @include for-phone-only {
+      font-size: 0.8em;
+    }
+    span.App__Credits {
+      margin-top: 0.2em;
+      font-size: 0.5em;
+    }
+  }
+}

@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=MovieDetail.css.map */
+.App__MovieDetailWrapper {
+  min-height: 100vh;
+  margin: 7vh 0 0 0;
+}
+
+.App__MovieDetailWrapper .App__MovieDetailContainer {
+  background-image: linear-gradient(to right, #070e1d 150px, rgba(7, 14, 29, 0.84) 100%);
+}
+/*# sourceMappingURL=MovieDetail.css.map */

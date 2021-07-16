@@ -30,6 +30,9 @@
 
 .App__MovieCardWrapper .App__MovieCardDetails h4 {
   margin: 0.3em 0;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .App__MovieCardWrapper .App__MovieCardDetails p {
