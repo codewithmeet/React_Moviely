@@ -17,8 +17,6 @@ const Player = () => {
     <div className="player-wrapper">
       <ReactPlayer
         url={trailerUrl}
-        light={true}
-        playing={true}
         key={trailerSite}
         width="100%"
         height="100%"

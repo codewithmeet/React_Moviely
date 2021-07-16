@@ -50,11 +50,12 @@
             margin: 0;
           }
           h1 {
-            span {
-              opacity: 0.5;
-              font-style: italic;
-              font-size: 0.4em;
-            }
+            margin-bottom: 0;
+          }
+          span {
+            opacity: 0.5;
+            font-style: italic;
+            font-size: 0.7em;
           }
           p {
             margin: 0 0 0.5em 0;
@@ -128,6 +129,7 @@
     justify-content: center;
     h2 {
       align-items: flex-start;
+      padding: 0 10px;
     }
   }
 }

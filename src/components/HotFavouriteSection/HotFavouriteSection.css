@@ -72,10 +72,14 @@
   }
 }
 
-.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h1 span {
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails h1 {
+  margin-bottom: 0;
+}
+
+.App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails span {
   opacity: 0.5;
   font-style: italic;
-  font-size: 0.4em;
+  font-size: 0.7em;
 }
 
 .App__HotFavouriteSectionWrapper .App__HotFavouriteSectionContainer .App__HotFavouriteSection .App__HotFavouriteCardWrapper .App__HotFavouriteCardDetails p {
@@ -184,5 +188,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 0 10px;
 }
 /*# sourceMappingURL=HotFavouriteSection.css.map */

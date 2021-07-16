@@ -28,10 +28,8 @@ const HotFavouriteSection = () => {
               alt="test"
             />
             <div className="App__HotFavouriteCardDetails">
-              <h1>
-                {MovieDetail.original_title}
-                <span> Action, Adventure, Thriller</span>
-              </h1>
+              <h1>{MovieDetail.original_title}</h1>
+              <span> Action, Adventure, Thriller</span>
 
               <h4 id="overviewdetails">{MovieDetail.tagline}</h4>
               <p>OVERVIEW</p>
