@@ -3,6 +3,8 @@ import { posterBaseURL } from "../../services/constants";
 import "./MovieCard.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useHistory } from "react-router";
+import { useContext } from "react";
+import { GlobalContext } from "../../context/GlobalContext";
 
 const MovieCard = (props: {
   movieName: string;
@@ -11,8 +13,10 @@ const MovieCard = (props: {
   movieId: number;
 }) => {
   const history = useHistory();
+  const { setData } = useContext(GlobalContext);
 
   const handleClick = (e: MouseEvent) => {
+    setData([]);
     history.push(`/movie-details/${e.currentTarget.id}`);
   };
 
