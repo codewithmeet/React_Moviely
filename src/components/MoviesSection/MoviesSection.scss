@@ -16,9 +16,6 @@
   }
   .App__MovieSection {
     width: 80%;
-    @include for-phone-only {
-      width: 100%;
-    }
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -29,6 +26,10 @@
       width: 10px;
       background-color: #454569;
       border-radius: 100px;
+
+      @include for-phone-only {
+        display: none;
+      }
     }
     &::-webkit-scrollbar-thumb {
       background-color: rgba(255, 255, 255, 0.287);
@@ -37,6 +38,9 @@
     }
     &::-webkit-scrollbar-track-piece {
       width: 10px;
+    }
+    @include for-phone-only {
+      width: 100%;
     }
   }
 }

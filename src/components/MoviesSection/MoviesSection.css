@@ -42,17 +42,17 @@
   white-space: nowrap;
 }
 
-@media (max-width: 764px) {
-  .App__MoviesSectionWrapper .App__MovieSection {
-    width: 100%;
-  }
-}
-
 .App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar {
   height: 8px;
   width: 10px;
   background-color: #454569;
   border-radius: 100px;
+}
+
+@media (max-width: 764px) {
+  .App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar-thumb {
@@ -63,5 +63,11 @@
 
 .App__MoviesSectionWrapper .App__MovieSection::-webkit-scrollbar-track-piece {
   width: 10px;
+}
+
+@media (max-width: 764px) {
+  .App__MoviesSectionWrapper .App__MovieSection {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=MoviesSection.css.map */
