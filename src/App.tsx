@@ -9,6 +9,7 @@ import MovieDetail from "./components/MovieDetail/MovieDetail";
 import MovieDisplayHOC from "./components/MovieDisplayHOC/MovieDisplayHOC";
 import NotFound from "./components/NotFound/NotFound";
 import { GlobalContext } from "./context/GlobalContext";
+import ScrollToTop from "./helpers/ScrollRestoration";
 import useDebounce from "./hooks/useDebounce";
 import { MultiSearch } from "./services/constants";
 
@@ -31,21 +32,24 @@ function App() {
   }, [debouncedSearchTerm, setData]);
 
   return (
-    <div className="App">
-      {/* Header */}
-      <Header />
+    <>
+      <ScrollToTop />
+      <div className="App">
+        {/* Header */}
+        <Header />
 
-      <Switch>
-        <Route path="/movie-details/:movieId" component={MovieDetail} exact />
-        <Route path="/" component={MovieDisplayHOC} exact />
-        <Route path="/test" component={LoadingScreen} exact />
-        <Route path="/404" component={NotFound} />
-        <Redirect from="*" to="/404" />
-      </Switch>
+        <Switch>
+          <Route path="/movie-details/:movieId" component={MovieDetail} exact />
+          <Route path="/" component={MovieDisplayHOC} exact />
+          <Route path="/test" component={LoadingScreen} exact />
+          <Route path="/404" component={NotFound} />
+          <Redirect from="*" to="/404" />
+        </Switch>
 
-      {/* Footer */}
-      <Footer />
-    </div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </>
   );
 }
 

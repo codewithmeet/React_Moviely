@@ -73,15 +73,20 @@ const HotFavouriteSection = () => {
           </div>
         </div>
       </div>
-      <div className="App__MovieTrailerContianer">
-        <h2>🔥{MovieDetail.videos.results[0].name}🔥</h2>
-        {MovieDetail.videos.results[0] !== null && <YoutubePlayer />}
-      </div>
-      <MoviesSection
-        sectionHeading="Recommendations🎥"
-        url=""
-        data={MovieDetail.recommendations.results}
-      />
+
+      {typeof MovieDetail.videos.results[0] !== "undefined" && (
+        <div className="App__MovieTrailerContianer">
+          <h2>🔥{MovieDetail.videos.results[0].name}🔥</h2>
+          <YoutubePlayer />
+        </div>
+      )}
+      {MovieDetail.recommendations.results.length !== 0 && (
+        <MoviesSection
+          sectionHeading="Recommendations🎥"
+          url=""
+          data={MovieDetail.recommendations.results}
+        />
+      )}
     </div>
   );
 };

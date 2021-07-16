@@ -7,6 +7,7 @@ import { GlobalContext } from "../../context/GlobalContext";
 import { bannerBaseURL } from "../../services/constants";
 import HotFavouriteSection from "../HotFavouriteSection/HotFavouriteSection";
 import LoadingScreen from "../LoadingScreen/LoadingScreen";
+import SearchResults from "../SearchResults/SearchResults";
 
 interface URIParams {
   movieId: string | undefined;
@@ -15,7 +16,7 @@ interface URIParams {
 const MovieDetail = () => {
   const params = useParams<URIParams>();
   const history = useHistory();
-  const { MovieDetail, setMovieDetail } = useContext(GlobalContext);
+  const { MovieDetail, setMovieDetail, data } = useContext(GlobalContext);
   const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -46,11 +47,19 @@ const MovieDetail = () => {
   };
 
   return (
-    <div className="App__MovieDetailWrapper">
-      <div className="App__MovieDetailContainer">
-        {Loading ? <LoadingScreen /> : <HotFavouriteSection />}
-      </div>
-    </div>
+    <>
+      {data.length !== 0 ? (
+        <div style={{ marginTop: "10vh" }}>
+          <SearchResults />
+        </div>
+      ) : (
+        <div className="App__MovieDetailWrapper">
+          <div className="App__MovieDetailContainer">
+            {Loading ? <LoadingScreen /> : <HotFavouriteSection />}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

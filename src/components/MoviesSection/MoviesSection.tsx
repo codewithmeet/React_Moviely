@@ -19,7 +19,6 @@ const MoviesSection = (props: {
   useEffect(() => {
     (async () => {
       try {
-        console.log(props.data);
         if (typeof props.data !== "undefined") {
           return setMovies(props.data);
         } else {
